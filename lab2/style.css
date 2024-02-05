@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    padding-top: 20px; /* Верхний отступ навигации */
+    padding-bottom: 20px; /* Нижний отступ навигации */
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 50px; /* Отступ слева между пунктами меню */
+
+    transition: color 0.3s linear;
+}
+
+.main {
+    color: #a20f2d;
+    transition: color 0.3s linear;
+}
+
+.main:hover {
+    color: #000;
+}
+
+.nav-item:hover {
+    color: #a20f2d;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 18px;
+    right: 50px; /* Отступ справа для меню */
+}
+
+.nav-img {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-img img {
+    width: 25px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.menu-img {
+    display: flex;
+    align-items: center;
+}
+
+.menu-img img {
+    width: 25px;
+    height: auto;
+    margin-left: 0px;
+    margin-right: 40px; /* Отступ справа для иконки меню */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #c41236;
+    margin: 4px 0;
+
+    transition: background-color 0.3s linear;
+}
+
+.menu-icon:hover .bar {
+    background-color: #000;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 65px;
+}
+
+.me-img {
+    width: 500px;
+    margin-right: 200px;  /* Отступ справа для меня */
+}
+
+.me-fullname {
+    font-size: 70px;
+    text-align: right;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-me {
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 0px 0px 0px;
+}
+
+.text-me a {
+    color: #626262;
+    text-decoration: none;
+    background-color: #e6e6e6;  /* Фон для ссылок */
+    padding: 3px 30px;
+    border-radius: 10px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 150px;
+}
+
+.h-about {
+    text-align: left;
+    margin-right: 200px; /* Отступ справа для заголовка */
+    margin-left: 200px;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.d-about {
+    text-align: justify;
+    margin-right: 200px;
+    font-size: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 150px;
+}
+
+.h-skills {
+    text-align: right;
+    margin-right: 200px;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.d-skills {
+    text-align: justify;
+    margin-left: 200px;
+    font-size: 20px;
+    margin-right: 200px; /* Отступ справа для текста */
+}
+
+footer {
+    margin-top: 130px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Cтили для contact.html */
+
+.contact-form section {
+    margin: 0 auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #a20f2d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #000;
+}
+
+.contact-form label[for="consent"] {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.contact-form input#consent {
+    margin: 0;              /* Отступы у чекбокса */
+    vertical-align: middle; /* Выравнивание вертикально с текстом */
+    margin-right: 5px;      /* Отступ между чекбоксом и текстом */
+    padding: 0;             /* Внутренние отступы */
+    width: auto;            /* Позволяет чекбоксу занимать только необходимое пространство */
+}
+
+/* Для радио кнопок */
+
+.contact-form .radio-group {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    margin-top: 10px;
+}
+
+.contact-form .radio-group label {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px; /* Одинаковое расстояние между радиокнопкой и названием */
+}
+
+.contact-form .radio-group input {
+    margin-right: 5px;
+    vertical-align: middle; /* Выравнивание вертикально с текстом */
+}
+
+.contact-form .radio-group input[type="radio"] {
+    margin: 0px; /* Дополнительный отступ у радиокнопок */
+}
+
+body.login-body {
+    background-image: url('img/back.jpg'); /* Фон только у login.html */
+    background-size: cover;
+    background-position: center;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; /* Для центрирования формы */
+    margin-top: 100px;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.login-form input,
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #a20f2d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background-color: #000;
+}
+
+/* Для чекбокса "Запомнить меня" */
+.login-form label[for="remember"] {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.login-form input#remember {
+    margin: 0;              /* Отступы у чекбокса */
+    vertical-align: middle; /* Выравнивание вертикально с текстом */
+    margin-right: 5px;      /* Небольшой отступ между чекбоксом и текстом */
+    padding: 0;             /* Внутренние отступы */
+    width: auto;            /* Позволяет чекбоксу занимать только необходимое пространство */
+}

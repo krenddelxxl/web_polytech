@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav-item main" href="../index.html">ГЛАВНАЯ</a>
+            <a class="nav-item" href="../index.html#about">ОБО МНЕ</a>
+            <a class="nav-item" href="../index.html#skills">НАВЫКИ</a>
+            <a class="nav-item" href="contact.html">ОБРАТНАЯ СВЯЗЬ</a>
+            <a class="nav-item nav-img" href="login.html">
+                <img src="../img/user.png" alt="Аккаунт">
+            </a>
+            <a class="nav-item menu-img" href="#">
+                <img src="../img/menu.png" alt="Меню">
+            </a>
+        </nav>
+    </header>
+
+    <section class="contact-form">
+        <h2>Обратная связь</h2>
+        <form action="https://httpbin.org/post" method="post">
+            <label for="fullname">ФИО:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Откуда узнали о нас:</label>
+            <div class="radio-group">
+                <label for="radio1"><input type="radio" id="radio1" name="source" value="Соцсети">Соцсети</label>
+                <label for="radio2"><input type="radio" id="radio2" name="source" value="Поисковые системы">Поисковые системы</label>
+                <label for="radio3"><input type="radio" id="radio3" name="source" value="Рекомендации друзей">Рекомендации друзей</label>
+                <label for="radio4"><input type="radio" id="radio4" name="source" value="Другое">Другое</label>
+            </div>
+            
+
+
+            <label for="issue-type">Тип обращения:</label>
+            <select id="issue-type" name="issue-type">
+                <option value="Жалоба">Жалоба</option>
+                <option value="Предложение">Предложение</option>
+            </select>
+
+            <label for="message">Текст сообщения:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="attachments">Вложения (файл):</label>
+            <input type="file" id="attachments" name="attachments">
+
+            <label for="consent">
+                <input type="checkbox" id="consent" name="consent" required> 
+                Даю согласие на обработку персональных данных
+            </label>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Петроченко Кирилл Александрович. Все права защищены.
+    </footer>
+</body>
+</html>

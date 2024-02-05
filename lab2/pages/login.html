@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Login</title>
+</head>
+
+<body class="login-body">
+
+    <header>
+        <nav>
+            <a class="nav-item main" href="../index.html">ГЛАВНАЯ</a>
+            <a class="nav-item" href="../index.html#about">ОБО МНЕ</a>
+            <a class="nav-item" href="../index.html#skills">НАВЫКИ</a>
+            <a class="nav-item" href="contact.html">ОБРАТНАЯ СВЯЗЬ</a>
+            <a class="nav-item nav-img" href="login.html">
+                <img src="../img/user.png" alt="Аккаунт">
+            </a>
+            <a class="nav-item menu-img" href="#">
+                <img src="../img/menu.png" alt="Меню">
+            </a>
+        </nav>
+    </header>
+
+    <section class="login-form">
+        <h2>Вход</h2>
+        <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+            <label for="login">Логин:</label>
+            <input type="text" id="login" name="login" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="remember">
+                <input type="checkbox" id="remember" name="remember"> Запомнить меня
+            </label>
+
+            <button type="submit">Войти</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Петроченко Кирилл Александрович. Все права защищены.
+    </footer>
+
+</body>
+
+</html>
