@@ -1,0 +1,10 @@
+/* Скрываем header */
+header {
+    display: none;
+}
+  
+/* Скрываем sidebar */
+.sidebar {
+    display: none;
+}
+  

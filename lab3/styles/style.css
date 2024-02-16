@@ -1,0 +1,151 @@
+/* index.html, header, sidebar */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #b9b9b9;
+    color: #2e2e2e;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #d0d0d0;
+    padding: 20px;
+}
+
+.sidebar ul {
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 32px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.featured-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.featured-games {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 0 300px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* genres.html" */
+
+.genres-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.genre {
+    flex: 0 0 calc(25% - 20px); /* 3 столбца, 4 строки */
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.genre h3 {
+    margin-top: 0;
+}
+
+.genre img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin-bottom: -120px; /* убирает пустое пространство снизу от жанра */
+}
+
+
+/* top.html */
+
+.featured-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 0 calc(25% - 20px);
+    text-align: center;
+}
+
+.game h3 {
+    margin-top: 0;
+}
+
+.top-games {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    padding-left: 0;
+}
+
+.top-games li {
+    counter-increment: top-game; /* Увеличиваем счетчик для каждой игры */
+    margin-bottom: 10px;
+}
+
+.top-games li::before {
+    content: counter(top-game) ". "; /* Нумерация для каждой игры */
+}
