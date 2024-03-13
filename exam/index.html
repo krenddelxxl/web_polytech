@@ -1,0 +1,297 @@
+<!-- Розовый: с коричневым, белым, цветом зеленой мяты, оливковым, серым, бирюзовым, нежно-голубым. -->
+<!-- Темно-коричневый: лимонно-желтый, голубой, цвет зеленой мяты, пурпурно-розовый, цветом лайма. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб Пересдача</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7ae22687d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex" href="#">
+                    <img src="image/logowtf.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top user-select-none">
+                    <span class="ms-3 collapse navbar-collapse text-reset">Экскурсии по Москве</span>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" aria-current="page" href="html/cab.html">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container px-5 py-4">
+            <div id="liveAlertPlaceholder"></div>
+            <div class="main-info mt-5 d-flex justify-content-center align-items-center">
+                <!-- <img src="image/info-img2.jpg" alt="main-info-img" class="w-100 h-90 main-info-img rounded-4 object-fit-cover mb-2 shadow-lg user-select-none"> -->
+                <img src="image/summermoscow.jpg" alt="main-info-img" width="1000" height="300" class="main-info-img rounded-4 object-fit-cover mb-2 shadow-lg user-select-none" style="margin-right: 20px;">
+
+                <div class="main-info-text fs-5 text-center mx-auto ml-3">
+                    Забудьте о походах в турфирмы или ожидании местного тура. Теперь вы можете раскрыть 
+                    весь потенциал Москвы, не выходя из дома! Сегодня перед вами открывается уникальная 
+                    возможность путешествовать по столице России в удобном формате: выберите интересные 
+                    маршруты в соответствии с вашими вкусами и предпочтениями. У нас есть экскурсии для 
+                    каждого - от исторических памятников до современных арт-пространств. Всего пара кликов 
+                    на нашем веб-сайте, и вы уже на пути к захватывающим приключениям! Быстрое и безопасное 
+                    бронирование, простая и удобная оплата - все для вашего комфорта. Позвольте нашим 
+                    опытным гидам открывать для вас новые горизонты и вести вас по пути открытий. 
+                    Готовьтесь к незабываемым впечатлениям и встречайте увлекательный мир Москвы вместе с нами!
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col fw-bold fs-1 text-center">
+                        Мы предоставляем
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col d-flex">
+                        <img src="image/map-pointer.svg" height="30" alt="" class="mt-1 user-select-none">
+                        <div class="benefit benefit-cancel ms-2">
+                            <div class="benefit-title fw-bold">Интересные маршруты</div>
+                            <div class="benefit-descript text-secondary">Мы предоставляем большой список интересных маршрутов по Москве</div>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <img src="image/online-payment.png" height="30" alt="" class="mt-1 user-select-none">
+                        <div class="benefit benefit_visa ms-2">
+                            <div class="benefit-title fw-bold">Оплата онлайн</div>
+                            <div class="benefit-descript text-secondary">Мы гарантируем сохранность платежей и персональных данных
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2 ">
+                    <div class="col d-flex ">
+                        <img src="image/flash.png" height="30" alt="" class="mt-1 user-select-none">
+                        <div class="benefit benefit-flash ms-2">
+                            <div class="benefit-title fw-bold">Быстрая поддержка</div>
+                            <div class="benefit-descript text-secondary">Поддержка онлайн-бронирования и оплаты экскурсий</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="walking-routes" class="walking-routes mt-5">
+                <div class="fs-3 fw-bold">
+                    Список пешеходных маршрутов
+                </div>
+                <div id="pagePAGE" class="page-of-pages">Страница 1 из 12</div>
+                <div class="inputs my-3 d-flex flex-column flex-sm-row">
+                    <div class="input-group input-group-find">
+                        <input id="find-route-input" type="text" class="form-control" placeholder="Поиск по названию" aria-label="" aria-describedby="find-route">
+                        <button class="btn btn-outline-success" type="button" id="find-route-btn">Найти</button>
+                    </div>
+                    <div class="input-group ms-5 w-25">
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Основной объект">
+                        <button class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="walking-routes-table table table-hover table-bordered text-center">
+                        <thead>
+                            <tr class="table-active">
+                                <th scope="col">Название</th>
+                                <th scope="col">Описание</th>
+                                <th scope="col">Основные объекты</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="wrtbody" class="walking-routes-tbody"></tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <nav aria-label="Page navigation">
+                        <ul id="pagination-buttons" class="pagination pagination-walking-routes">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="guidesContainer" class="guidesContainer mt-5 d-none">
+                <div class="fs-3 fw-bold">
+                    Доступные гиды по маршруту <span id="guidesRouteName" class="guidesRouteName text-decoration-underline">Нескучный сад</span>
+                </div>
+                <div class="inputs my-3 d-flex flex-column flex-sm-row">
+                    <div class="input-group w-25">
+                        <input type="text" class="form-control language-input" aria-label="Text input with dropdown button" placeholder="Язык экскурсии">
+                        <button class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    </div>
+
+                    <div class="expirience-container ms-0 ms-sm-5 mt-3 mt-sm-0 d-flex align-items-center">
+
+                        <div class="expirience-from-to d-flex">
+                            <input id="guide-exp-from-input" type="text" class="form-control mx-3 exp-input" placeholder="От" aria-label="">
+                            <input id="guide-exp-to-input" type="text" class="form-control exp-input" placeholder="До" aria-label="">
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered text-center">
+                        <thead>
+                            <tr class="table-active">
+                                <th scope="col"></th>
+                                <th scope="col">ФИО</th>
+                                <th scope="col">Языки</th>
+                                <th scope="col">Опыт работы</th>
+                                <th scope="col">Стоимость услуг в час</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="guideTable" class="guides-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="application-formalization-modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg application-formalization-modal">
+                <div class="modal-content app-form-modal">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ModalLabel">Оформление заявки</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-bio">ФИО гида: <span id="FIO-guide"></span> </div>
+                        <div class="modal-walking-route-name">Название маршрута: <span id="name-itinerary"></span> </div>
+                        <div class="modal-time-container py-2 d-flex flex-column flex-sm-row justify-content-between">
+                            <div class="modal-date-container">
+                                <div class="modal-date-title mb-1">Дата экскурсии:</div>
+                                <input id="data-tour-form" type="date" name="date" class="form-control rounded px-2 modal-date-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <div class="container-time">
+                                <div class="title-time-model mb-1">Время начала:</div>
+                                <div class="input-group input-group-sm mb-3">
+                                    <input id="start-time-tour" type="time" name="time" class="form-control rounded px-2 modal-time-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" min="09:00:00" max="23:00:00">
+                                </div>
+                            </div>
+                            <div class="modal-duration-container">
+                                <div class="modal-duration mb-1">Длительность экскурсии:</div>
+                                <div class="input-group input-group-sm mb-3">
+                                    <input id="hours-number-numbers" readonly type="text" class="form-control modal-hour-input" aria-label="Text input with dropdown button readonly">
+                                    <button class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="inputGroup-sizing-sm"></button>
+                                    <ul class="dropdown-menu dropdown-menu-end modal-hour-dropdown-menu">
+                                        <li><button onclick="setLengthOfTour(1)" class="dropdown-item modal-hour-btn modal-hour-1">1 час</button></li>
+                                        <li><button onclick="setLengthOfTour(2)" class="dropdown-item modal-hour-btn modal-hour-2">2 часа</button></li>
+                                        <li><button onclick="setLengthOfTour(3)" class="dropdown-item modal-hour-btn modal-hour-3">3 часа</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-people-container">
+                            <div class="modal-people">Количество человек: </div>
+                            <div class="input-group input-group-sm mb-3 w-25">
+                                <input id="number-of-people" type="number" class="form-control modal-people-count-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" min="1" max="20" value="1">
+                            </div>
+                        </div>
+                        <div class="modal-additional-options-container">
+                            <div class="modal-additional-options-title fs-5">Дополнительные опции: </div>
+                            <div class="modal-options-container d-flex flex-column flex-sm-row mt-2 mb-3">
+                                <div class="modal-option me-5">
+                                    <div class="form-check">
+                                        <input class="form-check-input modal-fast-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Скидка для школьников и студентов
+                                        </label>
+                                    </div>
+                                    <div class="modal-option-description">Cтоимость уменьшается на 15%<span class="modal-option-fast-extra"></span></div>
+                                </div>
+                                <div class="modal-option">
+                                    <div class="form-check">
+                                        <input class="form-check-input  modal-transfer-checkbox" type="checkbox" value="" id="">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Интерактивный путеводитель
+                                        </label>
+                                    </div>
+                                    <div class="modal-option-description">Увеличивает стоимость в 1,5 раза<span class="modal-option-transfer-extra"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-final-value">Итоговая стоимость: <span id="stock-money"></span>₽</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Отменить</button>
+                        <button type="button" class="btn btn-outline-success modal-btn-send" data-bs-dismiss="modal">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light py-5"> 
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col-md-4"> 
+                    <h3>Контактная информация</h3> 
+                    <p>Email: webexam@gmail.com</p> 
+                    <p>Телефон: +7 (999) 999-99-99</p> 
+                    <p>Адрес: ул. Никольская, 1, Москва, Россия</p> 
+                </div> 
+                <div class="col-md-4"> 
+                    <h3>Социальные сети</h3> 
+                    <ul class="socialnet list-unstyled"> 
+                        <li>
+                            <img src="image/vk.svg" height="30" alt="" class="mt-1 user-select-none">
+                            <a href="https://vk.com/">VK</a>
+                        </li>
+                        <li>
+                            <img src="image/telegram.svg" height="30" alt="" class="mt-1 user-select-none">
+                            <a href="https://www.twitter.com">Telegram</a>
+                        </li>
+                        <li>
+                            <img src="image/instagram.svg" height="30" alt="" class="mt-1 user-select-none">
+                            <a href="https://www.instagram.com">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="containerfooter">
+                        <h3>Способы оплаты</h3>
+                        <div class="payment-options">
+                            <div class="payment-option">
+                                <img src="image/mir.svg" height="30" alt="" class="mt-1 user-select-none">
+                            </div>
+                            <div class="payment-option">
+                                <img src="image/visa.svg" height="30" alt="" class="mt-1 user-select-none">
+                            </div>
+                            <div class="payment-option">
+                                <img src="image/mastercard.svg" height="30" alt="" class="mt-1 user-select-none">
+                            </div>
+                            <div class="payment-option">
+                                <img src="image/webmoney.svg" height="30" alt="" class="mt-1 user-select-none">
+                            </div>
+                            <div class="payment-option">
+                                <img src="image/qiwi.svg" height="30" alt="" class="mt-1 user-select-none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
