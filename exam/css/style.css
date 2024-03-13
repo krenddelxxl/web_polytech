@@ -1,10 +1,12 @@
+/* Темно-коричневый: лимонно-желтый, голубой, цвет зеленой мяты, пурпурно-розовый, цветом лайма. */
+
 ::selection {
-    background: #2fbe24;
+    background: #2fbe24; /* Цвет зеленой мяты / лаймовый */
     color: #fff;
 }
 
 .page-link{
-    color: #3EB489;
+    color: #3EB489; /* Цвет зеленой мяты / лаймовый */
     position: relative;
     display: block;
     padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
@@ -20,28 +22,28 @@
 
 .page-link:hover{
     z-index: 2;
-    color: #3a1e00;
-    border-color: #3d0000;
-    background-color: #bc3151;
+    color: #3a1e00;             /* Коричневый */
+    border-color: #3d0000;      /* Темно-коричневый */
+    background-color: #bc3151;  /* Пурпурно-розовый*/
 }
 
 .page-link:focus{
-    color:#150b00;
+    color:#150b00; /* Темно-коричневый */
 }
 
 .page-link:focus-visible{
-    border-color: #3d0000;
+    border-color: #3d0000; /* Коричневый */
 }
 
 .btn{
-    color: #3EB489;
-    border-color: #3EB489;
+    color: #3EB489;         /* Цвет зеленой мяты / лаймовый */
+    border-color: #3EB489;  /* Цвет зеленой мяты / лаймовый */
 }
 
 .btn:hover{
     color: #3a1e00;
     border-color: #3d0000;
-    background-color: #bc3151;
+    background-color: #bc3151; /* Пурпурно-розовый*/
 }
 
 .input-group{
@@ -67,16 +69,16 @@
 }
 
 .socialnet a{
-    color: #3EB489;
+    color: #3EB489; /* Цвет зеленой мяты / лаймовый */
     text-decoration: none;
 }
 
 .container h3{
-    color: #3EB489;
+    color: #3EB489; /* Цвет зеленой мяты / лаймовый */
 }
 
 .container p{
-    color: #3EB489;
+    color: #3EB489; /* Цвет зеленой мяты / лаймовый */
 }
 
 .containerfooter {

@@ -1,5 +1,5 @@
-// Получить список маршрутов и рабочие buttons, 10 для каждой страницы
-const api_key = "c8f6369a-0570-4892-9ff6-07d1ea355e65 ";
+// Список маршрутов и рабочие buttons, 10 для каждой страницы
+const api_key = "c8f6369a-0570-4892-9ff6-07d1ea355e65";
 const url = `http://exam-2023-1-api.std-900.ist.mospolytech.ru/api/routes?api_key=${api_key}`;
 const tablemaster = document.getElementById("wrtbody");
 const paginationmaster = document.getElementById("pagination-buttons");
@@ -41,7 +41,7 @@ function fetchDataAndDisplay(pageIndex) {
 
                 // console.log(`onclick="createGuide(${element.id},${element.name});"`);
 
-                //столбцов 10 для каждой страницы
+                // 10 столбцов для каждой страницы
                 row.innerHTML = `
                     <td data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="${element.name}">${element.name}</td>
                     <td data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="${element.mainObject}">${truncatedMainObject}${element.mainObject.length > 195 ? '...' : ''}</td>
